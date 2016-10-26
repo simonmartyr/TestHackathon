@@ -14,7 +14,8 @@ namespace TestHackathon.BL.WsHandler
 			try
 			{
 				var result = await rest.getZipData();
-				Console.WriteLine(result.PostCode); 
+				Console.WriteLine(result.PostCode);
+                SaveZip(result);
 			}
 			catch (Exception e)
 			{
@@ -22,6 +23,11 @@ namespace TestHackathon.BL.WsHandler
 			}
 
 		}
+
+        private void SaveZip(Zip zip)
+        {
+            BL.Mangers.ZipManager.SaveZip(zip);
+        }
 
 
 	}

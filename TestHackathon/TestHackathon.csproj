@@ -130,7 +130,6 @@
     </ImageAsset>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="DataAccessLayer\" />
     <Folder Include="Resources\" />
   </ItemGroup>
   <ItemGroup>
@@ -143,6 +142,8 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BusinessLayer\Mangers\ZipManager.cs" />
+    <Compile Include="DataAccessLayer\DataManager.cs" />
     <Compile Include="DataLayer\DataBase.cs" />
     <Compile Include="Main.cs" />
     <Compile Include="AppDelegate.cs" />

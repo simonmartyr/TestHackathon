@@ -25,7 +25,8 @@ namespace TestHackathon
 			Console.Write("Total short cuts: " + application.ShortcutItems.Length);
 			//todo setup shortcuts here. 
 			GetPostCode code = new GetPostCode();
-			code.getZip(); 
+			code.getZip();
+            Console.Write(" Zip count " + BL.Mangers.ZipManager.GetZipItems().Count + " "); 
 
 			return true;
 		}
