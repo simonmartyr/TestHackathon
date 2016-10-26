@@ -1,16 +1,21 @@
 ﻿using System;
 using System.Collections.Generic;
+using TestHackathon.BL.Base;
 using Refit;
+using SQLite;
 using Newtonsoft.Json;
 namespace TestHackathon.BL
 {
-	public class Zip
+	public class Zip : IBusinessEntity
 	{
 		public Zip()
 		{
 		}
 
-		[JsonProperty(PropertyName = "post code")]
+        [PrimaryKey, NotNull, AutoIncrement]
+        public int ID { get; set; }
+
+        [JsonProperty(PropertyName = "post code")]
 		public string PostCode { get; set; }
 
 		[JsonProperty(PropertyName = "country")]
