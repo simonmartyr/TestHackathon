@@ -130,12 +130,8 @@
     </ImageAsset>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Resources\" />
-    <Folder Include="DataLayer\" />
-    <Folder Include="BusinessLayer\" />
     <Folder Include="DataAccessLayer\" />
-    <Folder Include="BusinessLayer\WsHandler\" />
-    <Folder Include="BusinessLayer\Base\" />
+    <Folder Include="Resources\" />
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="LaunchScreen.storyboard" />
@@ -147,6 +143,7 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DataLayer\DataBase.cs" />
     <Compile Include="Main.cs" />
     <Compile Include="AppDelegate.cs" />
     <Compile Include="FirstViewController.cs" />
