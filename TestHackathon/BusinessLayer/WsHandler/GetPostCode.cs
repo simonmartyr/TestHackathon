@@ -35,7 +35,7 @@ namespace TestHackathon.BL.WsHandler
 				PostCode = result.PostCode,
 				Country = result.Country,
 				CountryCode = result.CountryCode
-			}
+			};
 
             BL.Mangers.ZipManager.SaveZip(zip);
 
