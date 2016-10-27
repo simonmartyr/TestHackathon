@@ -10,12 +10,12 @@ namespace TestHackathon.BL.WsHandler
 		{
 		}
 
-		public async void getZip()
+		public async void getZip(string zip)
 		{
 			var rest = RestService.For<GetUsAddress>(BL.WsHandler.RefitConstants.BASE_URL);
 			try
 			{
-				WebServiceObject result = await rest.getZipData("90210");
+				WebServiceObject result = await rest.getZipData(zip);
 				Console.WriteLine(result.PostCode);
 				//Zip zip = result as Zip;
 				List<Place> places = result.PlaceList; 

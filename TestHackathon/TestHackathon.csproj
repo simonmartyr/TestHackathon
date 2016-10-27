@@ -131,6 +131,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\" />
+    <Folder Include="UIControllers\" />
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="LaunchScreen.storyboard" />
@@ -164,6 +165,7 @@
     <Compile Include="SQLite.cs" />
     <Compile Include="BusinessLayer\WebServiceObject.cs" />
     <Compile Include="BusinessLayer\Mangers\PlaceManger.cs" />
+    <Compile Include="UIControllers\PostCodeTable.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <Import Project="..\packages\refit.3.0.1\build\netstandard1.3\refit.targets" Condition="Exists('..\packages\refit.3.0.1\build\netstandard1.3\refit.targets')" />

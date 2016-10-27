@@ -24,8 +24,6 @@ namespace TestHackathon
 			// If not required for your application you can safely delete this method
 			Console.Write("Total short cuts: " + application.ShortcutItems.Length);
 			//todo setup shortcuts here. 
-			GetPostCode code = new GetPostCode();
-			code.getZip();
             Console.Write(" Zip count " + BL.Mangers.ZipManager.GetZipItems().Count + " "); 
 
 			return true;

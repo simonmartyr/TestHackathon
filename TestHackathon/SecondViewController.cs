@@ -1,11 +1,16 @@
 ﻿using System;
 
 using UIKit;
+using Foundation;
 
 namespace TestHackathon
 {
 	public partial class SecondViewController : UIViewController
 	{
+		[Outlet("BigDaddy")]
+		public UITableView Daddy { get; set;}
+
+
 		protected SecondViewController(IntPtr handle) : base(handle)
 		{
 			// Note: this .ctor should not contain any initialization logic.
@@ -14,6 +19,8 @@ namespace TestHackathon
 		public override void ViewDidLoad()
 		{
 			base.ViewDidLoad();
+			Daddy.Source = new PostCodeTable(); 
+
 			// Perform any additional setup after loading the view, typically from a nib.
 		}
 
