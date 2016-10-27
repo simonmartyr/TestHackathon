@@ -1,13 +1,19 @@
 ﻿using System;
 using Refit;
 using Newtonsoft.Json;
+using TestHackathon.BL.Base;
+using SQLite; 
 namespace TestHackathon.BL
 {
-	public class Place
+	public class Place : IBusinessEntity
 	{
 		public Place()
 		{
 		}
+
+		[PrimaryKey, NotNull, AutoIncrement]
+		public int ID { get; set; }
+
 		[JsonProperty(PropertyName = "place name")]
 		public string PlaceName { get; set; }
 
@@ -22,6 +28,8 @@ namespace TestHackathon.BL
 
 		[JsonProperty(PropertyName = "latitude")]
 		public string Lat { get; set;}
+
+		public string PostCode { get; set;}
 
 	}
 

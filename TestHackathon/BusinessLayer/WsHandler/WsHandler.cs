@@ -15,8 +15,8 @@ namespace TestHackathon.BL.WsHandler
 
 	public interface GetUsAddress
 	{
-		[Get("/90210")]
-		Task<Zip> getZipData(); 
+		[Get("/{postcode}")]
+		Task<WebServiceObject> getZipData([AliasAs ("postcode")] string postcode); 
 	}
 
 

@@ -24,8 +24,6 @@ namespace TestHackathon.BL
 		[JsonProperty(PropertyName = "country abbreviation")]
 		public string CountryCode { get; set; }
 
-		//[JsonProperty(PropertyName = "places")]
-		//public List<Place> PlaceList { get; set;}
 
 	}
 }

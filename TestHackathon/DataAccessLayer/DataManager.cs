@@ -37,6 +37,7 @@ namespace TestHackathon.DAL
             }
         }
 
+		/*Zip Managers */
         public static Zip GetZip(int id)
         {
             return me.db.GetItem<Zip>(id); 
@@ -61,6 +62,34 @@ namespace TestHackathon.DAL
         {
             me.db.ClearTable<Zip>(); 
         }
+
+
+		/*place managers*/
+
+		public static Place GetPlace(int id)
+		{
+			return me.db.GetItem<Place>(id);
+		}
+
+		public static IEnumerable<Place> GetPlaces()
+		{
+			return me.db.GetItems<Place>();
+		}
+
+		public static int SavePlace(Place item)
+		{
+			return me.db.SaveItem<Place>(item);
+		}
+
+		public static int DeletePlace(int id)
+		{
+			return me.db.DeleteItem<Place>(id);
+		}
+
+		public static void ClearPlace()
+		{
+			me.db.ClearTable<Place>();
+		}
 
 
 

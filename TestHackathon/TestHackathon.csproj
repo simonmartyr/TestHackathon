@@ -162,6 +162,8 @@
     <Compile Include="BusinessLayer\Base\IBusinessEntity.cs" />
     <Compile Include="SQLiteAsync.cs" />
     <Compile Include="SQLite.cs" />
+    <Compile Include="BusinessLayer\WebServiceObject.cs" />
+    <Compile Include="BusinessLayer\Mangers\PlaceManger.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <Import Project="..\packages\refit.3.0.1\build\netstandard1.3\refit.targets" Condition="Exists('..\packages\refit.3.0.1\build\netstandard1.3\refit.targets')" />

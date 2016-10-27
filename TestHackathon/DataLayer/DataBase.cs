@@ -13,7 +13,8 @@ namespace TestHackathon.DataLayer
 
         public DataBase(string path) : base(path)
         {
-            CreateTable<Zip>(); 
+            CreateTable<Zip>();
+			CreateTable<Place>();
         }
 
         public void ClearTable<T>() where T : BL.Base.IBusinessEntity
